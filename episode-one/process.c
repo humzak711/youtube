@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <unistd.h> // for process and pid operations
+#include <sys/wait.h>
 
 void main() {
 
@@ -21,6 +22,7 @@ void main() {
 
 		// parent process will execute code at default:
 		default:
+		    wait(NULL);  // Wait for child to finish
 	}
 	return;
 }
