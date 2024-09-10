@@ -9,5 +9,8 @@ void main(int argc, char** argv) {
     */
     FILE* file = fopen(argv[0], "r"); 
     if (!file) printf("reflective ELF injection with an executable\n");
-    if (file) fclose(file);
+    if (file){
+        printf("running on disk not in memory");
+        fclose(file);
+    } 
 }
