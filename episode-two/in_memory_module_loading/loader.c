@@ -13,7 +13,9 @@
 #include <stdlib.h> // for exit codes like EXIT_FAILURE
 #include <dlfcn.h> // for dynamic linker operations like dlopen
 #include <stdio.h> // for input output operations and formatting too
-#include "packed_so.h"
+#include "packed_so.h" // contains the unsigned char array with our binaries data
+
+// test_so is an unsigned char array containing the binary data
 
 /* 
     typedef holding the function signature of the function that
